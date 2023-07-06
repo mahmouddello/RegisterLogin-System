@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- jQuery Form Validation  -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!--FontAwesome CSS-->
+    <script src="https://kit.fontawesome.com/43babdb10d.js" crossorigin="anonymous"></script>
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="/css/style.css">
+
+
+</head>
+
+<body>
+<div class="register-container">
+    <div id="alert"></div>
+    <iframe src="/background.html"></iframe>
+    <div class="register-form">
+        <h2 class="text-center mb-3">Register</h2>
+        <div class="text-center mb-1 reg_btns">
+            <a href="https://facebook.com" id="facebook"
+               class="buttons btn btn-outline-primary text-start mb-2 ms-2 me-2 fa-brands fa-facebook-f"></a>
+            <a href="https://google.com" id="google"
+               class="buttons btn btn-outline-danger text-start mb-2 ms-2 me-2 fa-brands fa-google"></a>
+            <a href="https://yandex.com" id="yandex"
+               class="buttons btn btn-outline-danger text-start mb-2 ms-2 me-2 fa-brands fa-yandex-international"></a>
+        </div>
+        <h6 class="text-center">Use your email instead</h6>
+        <form id="registerForm">
+            <div class="error"></div>
+            <div class="form-floating mt-3 mb-3">
+                <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+                <label for="name">Name</label>
+            </div>
+            <div class="error"></div>
+            <div class="form-floating mb-3">
+                <input name="surname" type="text" class="form-control" id="surname" placeholder="Surname">
+                <label for="surname">Surname</label>
+            </div>
+            <div class="error"></div>
+            <div class="form-floating mb-3">
+                <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+                <label for="email">Email address</label>
+            </div>
+            <div class="error"></div>
+            <div class="form-floating mb-3">
+                <input name="password" type="password" class="form-control" id="password" placeholder="Password">
+                <label for="password">Password</label>
+            </div>
+            <div class="error"></div>
+            <div class="form-floating mb-3">
+                <input name="password2" type="password" class="form-control" id="password2"
+                       placeholder=" Confirm Password">
+                <label for="password2">Confirm Password</label>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Create Account</button>
+            <p class="text-center mt-3">Already have an account? <a id="login_link" href="/login">Login</a></p>
+        </form>
+    </div>
+</div>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
