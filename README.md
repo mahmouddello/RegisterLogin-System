@@ -110,7 +110,7 @@ in the html page.
 1 - Since we are using an in-memory database (H2DB), the database will wipe all the data entered previously and recreate
 itself, however you can use a different database that suits your needs.
 
-2 - The [data.sql](src\main\resources\data.sql) file contains preloaded data for test purposes,
+2 - The [data.sql](src/main/resources/data.sql) file contains preloaded data for test purposes,
 you can't use the credentials from the file trying to log in, because the project uses password encryption and stores
 the passwords in an encrypted form in the database.
 
