@@ -54,18 +54,6 @@ below is an image describes the "users" table in the database after a successful
 
 <img src="images/db_after_record.png" alt="database records">
 
-3 - Validate your information at the login form:
-
-### Successful Login Attempt
-
-<img src="images/login_validation_success.png" alt="login success">
-
-<hr>
-
-### Incorrect information or Bad Credentials
-
-<img src="images/login_validation_failed.png" alt="login validation failed">
-
 ### Registration Exceptions
 
 1 - You can't create an account with an email used already,
